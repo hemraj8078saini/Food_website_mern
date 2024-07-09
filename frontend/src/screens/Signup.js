@@ -12,7 +12,7 @@ let  navigate=useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/creatuser", {
+    const response = await fetch("https://food-website-backend-n1u4.onrender.com", {
       method: "Post",
       headers: {
         "Content-Type": "application/json",
