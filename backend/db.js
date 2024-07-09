@@ -18,18 +18,13 @@ const connectToDatabase = async () => {
 
     const catData = await foodCategory.find({}).toArray();
 
-
-
-
     global.food_items=data;
     global.foodCategory=catData;
     console.log(global.food_items);
     console.log(global.foodCategory)
   } catch (error) {
-  
-    console.error("Error connecting to the database:", error);
+      console.error("Error connecting to the database:", error);
   }
 };
-
 module.exports = connectToDatabase;
 
